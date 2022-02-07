@@ -1,0 +1,6 @@
+/* --------- Default Theme ---------- */
+
+.main-container.theme-default {
+  color: var(--gray);
+  background: var(--bg-dark);
+}
