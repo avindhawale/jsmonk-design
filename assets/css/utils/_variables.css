@@ -34,11 +34,20 @@
   /* Backgrounds */
   --bg-dark: linear-gradient(#1e1e2f, #1e1e24);
   --bg-dark-content: #27293d;
+  --bg-dark-border-color: rgba(255, 255, 255, 0.5);
 
   --bg-light: linear-gradient(#ededf3, #d8d8e9);
   --bg-light-content: #ededf3;
 
+  --bg-dracula: linear-gradient(#13171c, #13171c);
+  --bg-dracula-content: rgba(180, 154, 234, 0.1);
+  --text-color-dracula: #c5c7ca;
+
   /* Width */
+  --width-full: 100%;
   --width-sidebar: 300px;
-  --width-content: calc(100%-300px);
+
+  /* Height */
+  --height-full: 100%;
+  --height-header: 110px;
 }

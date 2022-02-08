@@ -1,11 +1,4 @@
 @font-face {
-  font-family: "Poppins-BlackItalic";
-  src: url("../../fonts/Poppins-BlackItalic.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Poppins-ExtraBold";
   src: url("../../fonts/Poppins-ExtraBold.ttf");
   font-weight: normal;
