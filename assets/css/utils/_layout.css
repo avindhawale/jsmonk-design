@@ -83,10 +83,6 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.main-container .page .content .content-body .content-body-footer {
-}
-.main-container .color-wrapper {
-}
 .main-container .color-wrapper .colors {
   display: flex;
   flex-direction: row;
@@ -154,4 +150,8 @@
 }
 .color.black {
   background-color: var(--black);
+}
+
+.demo-component-avatar-wrapper img {
+  margin-right: 1rem;
 }

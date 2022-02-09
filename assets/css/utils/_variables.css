@@ -50,4 +50,8 @@
   /* Height */
   --height-full: 100%;
   --height-header: 110px;
+
+  /* Border */
+  --br-full: 100%;
+  --br-sm: 10%;
 }
