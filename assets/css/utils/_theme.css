@@ -1,21 +1,29 @@
 /* --------- Default Theme ---------- */
 
-.main-container.theme-default {
+.theme-default {
   color: var(--text-color-dracula);
   background: var(--bg-dark);
 }
-.main-container.theme-default .header {
+.theme-default .header {
   background: var(--bg-dark);
   z-index: 1;
 }
-.main-container.theme-default .border-color {
+.theme-default .border-color {
   border-color: var(--bg-dark-border-color);
 }
-.main-container.theme-default .logo-title,
-.main-container.theme-default .logo-subtitle,
-.main-container.theme-default .drawer-head-title,
-.main-container.theme-default a.link {
+.theme-default .logo-title,
+.theme-default .logo-subtitle,
+.theme-default .drawer-head-title,
+.theme-default a.link {
   color: var(--green);
+}
+.theme-default a.link-footer {
+  color: var(--cyan);
+}
+
+.theme-default code {
+  background-color: var(--gray-charcoal);
+  color: var(--black);
 }
 
 /* --------- Dracula Theme ---------- */

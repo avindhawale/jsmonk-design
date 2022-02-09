@@ -104,3 +104,15 @@ a.link {
   text-decoration: none;
   cursor: pointer;
 }
+
+a.link-footer {
+  text-decoration: none;
+  cursor: pointer;
+}
+a.link-footer:hover {
+  text-decoration: underline;
+}
+code {
+  padding: 0px 5px;
+  border-radius: 2px;
+}

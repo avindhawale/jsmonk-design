@@ -18,6 +18,10 @@
   text-align: left;
 }
 
+.main-container i::before {
+  vertical-align: middle;
+}
+
 .main-container .header {
   display: flex;
   flex-direction: row;
@@ -73,4 +77,81 @@
 .main-container .page .content .content-body .content-body-details h3 {
   margin: 0px 20px;
   font-family: "Poppins-Thin";
+}
+.main-container .page .content .content-body .content-body-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-container .page .content .content-body .content-body-footer {
+}
+.main-container .color-wrapper {
+}
+.main-container .color-wrapper .colors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 400px;
+}
+.main-container .color-wrapper .colors .color {
+  width: 115px;
+  padding: 1rem;
+  text-align: center;
+  margin-right: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.color.blue {
+  background-color: var(--blue);
+}
+.color.indigo {
+  background-color: var(--indigo);
+}
+.color.purple {
+  background-color: var(--purple);
+}
+.color.pink {
+  background-color: var(--pink);
+}
+.color.red {
+  background-color: var(--red);
+}
+.color.orange {
+  background-color: var(--orange);
+}
+.color.yellow {
+  background-color: var(--yellow);
+}
+.color.green {
+  background-color: var(--green);
+}
+.color.teal {
+  background-color: var(--teal);
+}
+.color.cyan {
+  background-color: var(--cyan);
+}
+.color.white {
+  background-color: var(--white);
+}
+.color.gray {
+  background-color: var(--gray);
+}
+.color.gray-light {
+  background-color: var(--gray-light);
+}
+.color.gray-lighter {
+  background-color: var(--gray-lighter);
+}
+.color.gray-lightest {
+  background-color: var(--gray-lightest);
+}
+.color.gray-charcoal {
+  background-color: var(--gray-charcoal);
+}
+.color.gray-dark {
+  background-color: var(--gray-dark);
+}
+.color.black {
+  background-color: var(--black);
 }
