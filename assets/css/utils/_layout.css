@@ -155,3 +155,20 @@
 .demo-component-avatar-wrapper img {
   margin-right: 1rem;
 }
+.demo-component-alert-wrapper {
+  border-radius: 0.25rem;
+}
+.demo-component-badge-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.demo-component-badge-wrapper .badge-wrapper {
+  margin-right: 1rem;
+}
+.demo-component-badge-wrapper .badge-count-wrapper {
+  margin-right: 2rem;
+}
+.badge-count-wrapper i {
+  font-size: 3rem;
+}
