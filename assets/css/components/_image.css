@@ -1,0 +1,6 @@
+.responsive-img {
+  width: 100%;
+}
+.responsive-img.round-img {
+  border-radius: var(--radius-full);
+}

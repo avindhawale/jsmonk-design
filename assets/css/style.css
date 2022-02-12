@@ -16,6 +16,7 @@
 @import url("components/_badge.css");
 @import url("components/_button.css");
 @import url("components/_card.css");
+@import url("components/_image.css");
 
 /* ------------- Theme CSS---------------- */
 @import url("utils/_theme.css");

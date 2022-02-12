@@ -85,3 +85,55 @@
   margin-bottom: 0.5rem;
   color: var(--black-text);
 }
+
+.card.card-product {
+  padding: 0rem;
+}
+.card.card-product .product-wrapper {
+  text-align: center;
+}
+
+.card.card-product .product-wrapper .img-wrapper {
+  text-align: center;
+}
+.card.card-product .product-wrapper .img-wrapper img {
+  width: 100%;
+  height: auto;
+}
+.card-product .a-price {
+  font-size: 1.25rem;
+  color: var(--red);
+  text-decoration: none;
+  position: relative;
+  line-height: normal;
+  display: flex;
+  padding: 1rem;
+}
+.card-product .a-price .a-price-symbol {
+  top: -0.5em;
+  font-size: 0.8125rem;
+  position: relative;
+}
+.card-product .a-price .a-price-whole {
+  font-size: 1.5rem;
+}
+.card-product .old-price {
+  text-decoration: line-through;
+  color: var(--gray-charcoal);
+  font-size: 1rem;
+}
+.card-product .card-badge {
+  background: url(/assets/images/badge_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0px;
+  top: -2px;
+  width: 45px;
+  height: 60px;
+  color: var(--white);
+}
+.card-product .card-btn-container {
+  margin-bottom: 1rem;
+  justify-content: space-around;
+}

@@ -65,5 +65,5 @@
   --radius-sm: 3px;
   --radius-md: 5px;
   --radius-lg: 10px;
-  --radius-full: 99rem;
+  --radius-full: 100%;
 }
