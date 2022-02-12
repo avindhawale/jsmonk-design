@@ -36,3 +36,17 @@
 .border-left {
   border-left: 1px solid;
 }
+
+/* Border-Radius */
+.radius-sm {
+  border-radius: 3px;
+}
+.radius-md {
+  border-radius: 5px;
+}
+.radius-lg {
+  border-radius: 10px;
+}
+.radius-full {
+  border-radius: 99rem;
+}

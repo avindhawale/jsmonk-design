@@ -26,4 +26,60 @@
   color: var(--black);
 }
 
+/* --------- Light Theme ---------- */
+
+.theme-light {
+  color: var(--dark);
+  background: var(--bg-light);
+}
+.theme-light .header {
+  background: var(--bg-content);
+  z-index: 1;
+}
+.theme-light .border-color {
+  border-color: var(--bg-light-border-color);
+}
+.theme-light .logo-title,
+.theme-light .logo-subtitle,
+.theme-light .drawer-head-title,
+.theme-light a.link {
+  color: var(--green);
+}
+.theme-light a.link-footer {
+  color: var(--cyan);
+}
+
+.theme-light code {
+  background-color: var(--gray-charcoal);
+  color: var(--black);
+}
+
+/* --------- Default Theme ---------- */
+
+.theme-dracula {
+  color: var(--text-color-dracula);
+  background: var(--bg-dracula);
+}
+.theme-dracula .header {
+  background: var(--bg-dracula-content);
+  z-index: 1;
+}
+.theme-dracula .border-color {
+  border-color: var(--bg-dark-border-color);
+}
+.theme-dracula .logo-title,
+.theme-dracula .logo-subtitle,
+.theme-dracula .drawer-head-title,
+.theme-dracula a.link {
+  color: var(--green);
+}
+.theme-dracula a.link-footer {
+  color: var(--cyan);
+}
+
+.theme-dracula code {
+  background-color: var(--gray-charcoal);
+  color: var(--black);
+}
+
 /* --------- Dracula Theme ---------- */

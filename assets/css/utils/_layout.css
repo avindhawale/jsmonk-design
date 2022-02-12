@@ -172,3 +172,11 @@
 .badge-count-wrapper i {
   font-size: 3rem;
 }
+.demo-component-button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.demo-component-button-wrapper button {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
