@@ -180,6 +180,7 @@
   margin-right: 1rem;
   margin-bottom: 1rem;
 }
-.demo-component-image-wrapper {
+.demo-component-image-wrapper,
+.demo-component-input-wrapper {
   width: 50%;
 }
