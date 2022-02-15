@@ -1,212 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <title>JSMonk UI Component library - Introduction</title>
-    <script src="/js/index.js" defer></script>
-    <script src="/js/index.js" defer></script>
-  </head>
-  <body>
-    <div id="main-container" class="main-container theme-light">
-      <!-- Header  -->
-      <div class="header mb-5 box-shadow-medium">
-        <div class="header-logo-wrapper px-5 py-2">
-          <div class="logo">
-            <span class="logo-title">jsmonk ui</span>
-            <span class="logo-subtitle">component library</span>
-          </div>
-        </div>
-        <div class="header-menu-wrapper">
-          <div class="center-menus"></div>
-          <div class="right-menus">
-            <div class="menu-icon" onclick="toggleTheme()"><i class="bi bi-gear"></i></i>Theme</div>
-            <a class="menu-icon" target="blank"
-                href="https://github.com/avindhawale/jsmonk-design/tree/jsmonk-design-dev"
-                class="menu-icon"
-              ><i class="bi bi-person"></i>Profile</a>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <title>JSMonk UI Component library - Introduction</title>
+  <script src="/js/index.js" defer></script>
+  <script src="/js/index.js" defer></script>
+</head>
+
+<body>
+  <div id="main-container" class="main-container theme-light">
+    <!-- Header  -->
+    <div class="header mb-5 box-shadow-medium">
+      <div class="header-logo-wrapper px-5 py-2">
+        <div class="logo">
+          <span class="logo-title">jsmonk ui</span>
+          <span class="logo-subtitle">component library</span>
         </div>
       </div>
-      <div class="page">
-        <div class="sidebar">
-          <div class="drawer-wrapper m-2 box-shadow-medium">
-            <div class="drawer-head border-bottom border-color px-5 py-2">
-              <a target="blank"
-                href="https://github.com/avindhawale/jsmonk-design/tree/jsmonk-design-dev"
-                class="drawer-head-title"
-              >
-                <span class="drawer-head-title-icon"
-                  ><i class="bi bi-badge-ad-fill"></i
-                ></span>
-                <span class="drawer-head-title-text ml-3">JSMONK DESIGN</span>
-              </a>
-            </div>
-            <ul class="drawer-list px-5 py-2">
-              <li class="drawer-item drawer-item-heading">
-                <i class="drawer-item-icon bi bi-gear"></i>Getting started
-              </li>
-              <li class="drawer-item">
-                <a href="/index.html">Introduction</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/installation.html">Installation</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/themes.html">Themes</a>
-              </li>
-              <li class="drawer-item drawer-item-heading">
-                <i class="drawer-item-icon bi bi-hdd-stack"></i>Components
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/avatar.html">Avatar</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/alert.html">Alert</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/badge.html">Badge</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/button.html">Button</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/cards.html">Card</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/images.html">Image</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/input.html">Input</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/list.html">Lists</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/navigation.html">Navigation</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/rating.html">Rating</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/grid.html">Simplified Grid</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/slider.html">Slider</a>
-              </li>
-              <li class="drawer-item drawer-item-heading">
-                <i class="drawer-item-icon bi bi-filter-square"></i>Spacing
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/padding.html">Padding</a>
-              </li>
-              <li class="drawer-item">
-                <a  class="active" href="/views/components/margin.html">Margin</a>
-              </li>
-              <li class="drawer-item drawer-item-heading">
-                <a href="/views/components/typography.html"
-                  ><i class="drawer-item-icon bi bi-file-font"></i>Typography</a
-                >
-              </li>
-            </ul>
-          </div>
+      <div class="header-menu-wrapper">
+        <div class="center-menus"></div>
+        <div class="right-menus">
+          <div class="menu-icon" onclick="toggleTheme()"><i class="bi bi-gear"></i></i>Theme</div>
+          <a class="menu-icon" target="blank" href="https://github.com/avindhawale/jsmonk-design/tree/jsmonk-design-dev"
+            class="menu-icon"><i class="bi bi-person"></i>Profile</a>
         </div>
-        <section class="content">
-          <div class="content-body m-2 px-5 box-shadow-medium">
-            <div
-              class="content-body-title border-bottom px-5 py-2 mb-5 border-color"
-            >
-              <h2>Introduction</h2>
-            </div>
-            <div class="content-body-details pb-5">
-              <p>
-                <b>JSMonk UI</b> is a premium component material with a fresh,
-                new design inspired by Imaginary Design. It is based on the new
-                css design paradigm and comes packed with multiple components.
-                All components are built to fit perfectly with each other while
-                aligning to the material concepts.
-              </p>
-
-              <h3>Github Access</h3>
-              <p>
-                <a
-                  class="link"  target="blank"
-                  href="https://github.com/avindhawale/jsmonk-design/tree/jsmonk-design-dev"
-                  >Click here</a
-                >
-                to access JSMonk UI repository.<br />
-                Follow the development closely, access to the release history,
-                hot bug fixes and new features. Drop a message before fork it or
-                use it as a template to update easily.
-              </p>
-
-              <h3>No Dependencies</h3>
-              <p>
-                No other third party framework like NodeJS required to install.
-                Just a reference and ready to use the components.
-              </p>
-
-              <h3>Responsive</h3>
-              <p>
-                Not yet fully responsive but can be used at some level. We will
-                soon bring new version with fully responsive support.
-              </p>
-              <p>
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2540media%2520screen%2520and%2520%28max-width%253A%2520991px%29%2520%257B%250A%2520%2520.navbar%2520.navbar-brand-wrapper%2520.brand-logo%2520%257B%250A%2520%2520%2520%2520display%253A%2520none%253B%250A%2520%2520%257D%250A%2520%2520.navbar%2520.navbar-brand-wrapper%2520.brand-logo-mini%2520%257B%250A%2520%2520%2520%2520display%253A%2520inline-block%253B%250A%2520%2520%257D%250A%257D"
-                  style="
-                    width: 572px;
-                    height: 335px;
-                    border: 0;
-                    transform: scale(1);
-                    overflow: hidden;
-                  "
-                  sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
-              </p>
-
-              <h3>Well Documented Code</h3>
-              <p>
-                Well documented and commented source to understand the code
-                easily.
-              </p>
-              <p>
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F*%2520Box%2520shadow%2520*%252F%250A.box-shadow-soft%2520%257B%250A%2520%2520-webkit-box-shadow%253A%25202px%25202px%25205px%25202px%2520rgba%28137%252C%2520137%252C%2520137%252C%25200.5%29%253B%250A%2520%2520-moz-box-shadow%253A%25202px%25202px%25205px%25202px%2520rgba%28137%252C%2520137%252C%2520137%252C%25200.5%29%253B%250A%2520%2520box-shadow%253A%25202px%25202px%25205px%25202px%2520rgba%28137%252C%2520137%252C%2520137%252C%25200.5%29%253B%250A%257D"
-                  style="
-                    width: 681px;
-                    height: 298px;
-                    border: 0;
-                    transform: scale(1);
-                    overflow: hidden;
-                  "
-                  sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
-              </p>
-
-              <h3>Browser Support</h3>
-              <p>
-                It supports all kind of browsers and all the versions. Except IE
-                browser.
-              </p>
-
-              <h3>Free Update</h3>
-              <p>Free lifetime updates including new features and bug fixes.</p>
-            </div>
-            <div class="content-body-footer p-5 border-top">
-              <span></span>
-              <a href="/views/installation.html" class="link-footer text-lg">
-                Installation
-                <i class="bi bi-arrow-right-circle ml-2"></i>
-              </a>
-            </div>
-          </div>
-        </section>
       </div>
     </div>
-  </body>
+    <div class="page">
+      <div class="sidebar">
+        <div class="drawer-wrapper m-2 box-shadow-medium">
+          <div class="drawer-head border-bottom border-color px-5 py-2">
+            <a target="blank" href="https://github.com/avindhawale/jsmonk-design/tree/jsmonk-design-dev"
+              class="drawer-head-title">
+              <span class="drawer-head-title-icon"><i class="bi bi-badge-ad-fill"></i></span>
+              <span class="drawer-head-title-text ml-3">JSMONK DESIGN</span>
+            </a>
+          </div>
+          <ul class="drawer-list px-5 py-2">
+            <li class="drawer-item drawer-item-heading">
+              <i class="drawer-item-icon bi bi-gear"></i>Getting started
+            </li>
+            <li class="drawer-item">
+              <a href="/index.html">Introduction</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/installation.html">Installation</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/themes.html">Themes</a>
+            </li>
+            <li class="drawer-item drawer-item-heading">
+              <i class="drawer-item-icon bi bi-hdd-stack"></i>Components
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/avatar.html">Avatar</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/alert.html">Alert</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/badge.html">Badge</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/button.html">Button</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/cards.html">Card</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/images.html">Image</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/input.html">Input</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/list.html">Lists</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/navigation.html">Navigation</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/rating.html">Rating</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/grid.html">Simplified Grid</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/slider.html">Slider</a>
+            </li>
+            <li class="drawer-item drawer-item-heading">
+              <i class="drawer-item-icon bi bi-filter-square"></i>Spacing
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/padding.html">Padding</a>
+            </li>
+            <li class="drawer-item">
+              <a class="active" href="/views/components/margin.html">Margin</a>
+            </li>
+            <li class="drawer-item drawer-item-heading">
+              <a href="/views/components/typography.html"><i class="drawer-item-icon bi bi-file-font"></i>Typography</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="content">
+        <div class="content-body m-2 px-5 box-shadow-medium">
+          <div class="content-body-title border-bottom px-5 py-2 mb-5 border-color">
+            <h2>Margin</h2>
+          </div>
+          <div class="content-body-details pb-5">
+            <p>
+              The margin property adds spacing between the elements while CSS padding between the content and container
+              boundary.
+            </p>
+            <p>
+              The <b>JSMonk UI</b> has built-in utility responsive classes for margin and padding that you may use
+              easily in various
+              elements to manage the spacing.
+            </p>
+
+            <h3>Syntax</h3>
+            <p>
+              You may use the padding and margin shorthand JSMonk classes as follows:
+            </p>
+            <p><code>{property}{sides}-{size}</code></p>
+            <p>
+              Where:<br>
+              <b>property</b> = <b>m</b> for margin and <b>p</b> for padding
+            </p>
+
+            <p>Following are sides shorthand meanings:</p>
+
+            <div class="gen-wrapper mx-10">
+              <ul>
+                <li><b>l</b> = defines the left-margin or left-padding</li>
+                <li><b>r</b> = defines the right-margin or right-padding</li>
+                <li><b>t</b> = defines the top-margin or top-padding</li>
+                <li><b>b</b> = defines the bottom-margin or right-padding</li>
+                <li><b>x</b> = For setting left and right padding and margins by the single call</li>
+                <li><b>y</b> = For setting top and bottom margins</li>
+                <li><b>blank</b> = margin and padding for all sides</li>
+              </ul>
+            </div>
+            <br>
+
+            <p>
+              The example below shows applying different margins on top and bottom between the elements. For the top
+              margin, following classes are used:
+            </p>
+            <div class="gen-wrapper mx-10">
+              <ul>
+                <li><b>mt-3</b></li>
+                <li><b>mt-2</b></li>
+                <li><b>mt-4</b></li>
+              </ul>
+            </div>
+            <br>
+
+            <p>for the bottom, these classes are used: </p>
+            <div class="gen-wrapper mx-10">
+              <ul>
+                <li><b>mb-5</b></li>
+                <li><b>mb-4</b></li>
+                <li><b>mb-2</b></li>
+                <li><b>mb-1</b></li>
+              </ul>
+            </div>
+            <br>
+            <div class="gen-wrapper">
+              <p class="mt-3 mb-5 bg-info">mt-3 mb-5 </p>
+              <p class="mt-2 mb-4 bg-success">mt-2 mb-4</p>
+              <p class="mt-4 mb-2 bg-primary">mt-4 mb-2</p>
+              <p class="mt-3 mb-1 bg-danger">mt-3 mb-1</p>
+            </div>
+            <br>
+            <p>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=719&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=148%25&si=false&es=2x&wm=false&code=%253C%21--%2520Margin%2520--%253E%250A%253Cp%2520class%253D%2522mt-3%2520mb-5%2520bg-info%2522%253Emt-3%2520mb-5%2520%253C%252Fp%253E%250A%253Cp%2520class%253D%2522mt-2%2520mb-4%2520bg-success%2522%253Emt-2%2520mb-4%253C%252Fp%253E%250A%253Cp%2520class%253D%2522mt-4%2520mb-2%2520bg-primary%2522%253Emt-4%2520mb-2%253C%252Fp%253E%250A%253Cp%2520class%253D%2522mt-3%2520mb-1%2520bg-danger%2522%253Emt-3%2520mb-1%253C%252Fp%253E"
+                style="width: 719px; height: 301px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+
+            </p>
+
+          </div>
+          <div class="content-body-footer p-5 border-top">
+            <span></span>
+            <a href="/views/installation.html" class="link-footer text-lg">
+              Installation
+              <i class="bi bi-arrow-right-circle ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+
 </html>

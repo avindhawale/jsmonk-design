@@ -213,7 +213,18 @@
 .demo-component-input-wrapper {
   width: 50%;
 }
-.demo-component-navbar-wrapper {
+.demo-component-navbar-wrapper,
+.demo-component-typo-wrapper {
   width: 80%;
   margin-bottom: 1rem;
+}
+.typo-details p {
+  margin-bottom: 0;
+}
+.gen-wrapper {
+  width: 50%;
+}
+.gen-wrapper ul {
+  list-style: disc;
+  font-family: "Poppins-Regular";
 }

@@ -31,7 +31,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "ubuntu-medium", sans-serif;
+  font-family: "Poppins-Regular";
 }
 
 /* Heading */
@@ -53,11 +53,11 @@ h4,
 }
 h5,
 .h5 {
-  font-size: 0.5rem;
+  font-size: 0.8rem;
 }
 h6,
 .h6 {
-  font-size: 0.3rem;
+  font-size: 0.5rem;
 }
 
 /* Text */
@@ -115,4 +115,44 @@ a.link-footer:hover {
 code {
   padding: 0px 5px;
   border-radius: 2px;
+}
+
+/* color text */
+.text-primary {
+  color: var(--primary);
+}
+.text-secondary {
+  color: var(--secondary);
+}
+.text-success {
+  color: var(--success);
+}
+.text-warning {
+  color: var(--warning);
+}
+.text-danger {
+  color: var(--danger);
+}
+.text-info {
+  color: var(--info);
+}
+
+/* Background color  */
+.bg-primary {
+  background-color: var(--primary);
+}
+.bg-secondary {
+  background-color: var(--secondary);
+}
+.bg-success {
+  background-color: var(--success);
+}
+.bg-warning {
+  background-color: var(--warning);
+}
+.bg-danger {
+  background-color: var(--danger);
+}
+.bg-info {
+  background-color: var(--info);
 }
