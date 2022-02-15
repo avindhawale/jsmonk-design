@@ -18,6 +18,7 @@
 @import url("components/_card.css");
 @import url("components/_image.css");
 @import url("components/_input.css");
+@import url("components/_navbar.css");
 
 /* ------------- Theme CSS---------------- */
 @import url("utils/_theme.css");

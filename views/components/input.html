@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <title>JSMonk UI Component library - Input</title>
+    <script src="/js/index.js" defer></script>
   </head>
   <body>
-    <div class="main-container theme-default">
+    <div id="main-container" class="main-container theme-light">
       <!-- Header  -->
       <div class="header mb-5 box-shadow-medium">
         <div class="header-logo-wrapper px-5 py-2">
@@ -17,13 +18,22 @@
             <span class="logo-subtitle">component library</span>
           </div>
         </div>
-        <div class="header-menu-wrapper"></div>
+        <div class="header-menu-wrapper">
+          <div class="center-menus"></div>
+          <div class="right-menus">
+            <div class="menu-icon" onclick="toggleTheme()"><i class="bi bi-gear"></i></i>Theme</div>
+            <a class="menu-icon" target="blank"
+                href="https://github.com/avindhawale/jsmonk-design/tree/jsmonk-design-dev"
+                class="menu-icon"
+              ><i class="bi bi-person"></i>Profile</a>
+          </div>
+        </div>
       </div>
       <div class="page">
         <div class="sidebar">
           <div class="drawer-wrapper m-2 box-shadow-medium">
             <div class="drawer-head border-bottom border-color px-5 py-2">
-              <a
+              <a target="blank"
                 href="https://github.com/avindhawale/jsmonk-design/tree/jsmonk-design-dev"
                 class="drawer-head-title"
               >
@@ -56,25 +66,46 @@
                 <a href="/views/components/alert.html">Alert</a>
               </li>
               <li class="drawer-item">
-                <a class="active" href="/views/components/badge.html">Badge</a>
+                <a href="/views/components/badge.html">Badge</a>
               </li>
-              <li class="drawer-item"><a href="#">Button</a></li>
-              <li class="drawer-item"><a href="#">Card</a></li>
-              <li class="drawer-item"><a href="#">Image</a></li>
-              <li class="drawer-item"><a href="#">Input</a></li>
-              <li class="drawer-item"><a href="#">Lists</a></li>
-              <li class="drawer-item"><a href="#">Navigation</a></li>
-              <li class="drawer-item"><a href="#">Rating</a></li>
-              <li class="drawer-item"><a href="#">Toast/Notify</a></li>
-              <li class="drawer-item"><a href="#">Simplified Grid</a></li>
-              <li class="drawer-item"><a href="#">Slider</a></li>
+              <li class="drawer-item">
+                <a href="/views/components/button.html">Button</a>
+              </li>
+              <li class="drawer-item">
+                <a href="/views/components/cards.html">Card</a>
+              </li>
+              <li class="drawer-item">
+                <a href="/views/components/images.html">Image</a>
+              </li>
+              <li class="drawer-item">
+                <a  class="active" href="/views/components/input.html">Input</a>
+              </li>
+              <li class="drawer-item">
+                <a href="/views/components/list.html">Lists</a>
+              </li>
+              <li class="drawer-item">
+                <a href="/views/components/navigation.html">Navigation</a>
+              </li>
+              <li class="drawer-item">
+                <a href="/views/components/rating.html">Rating</a>
+              </li>
+              <li class="drawer-item">
+                <a href="/views/components/grid.html">Simplified Grid</a>
+              </li>
+              <li class="drawer-item">
+                <a href="/views/components/slider.html">Slider</a>
+              </li>
               <li class="drawer-item drawer-item-heading">
                 <i class="drawer-item-icon bi bi-filter-square"></i>Spacing
               </li>
-              <li class="drawer-item"><a href="#">Padding</a></li>
-              <li class="drawer-item"><a href="#">Margin</a></li>
+              <li class="drawer-item">
+                <a href="/views/components/padding.html">Padding</a>
+              </li>
+              <li class="drawer-item">
+                <a href="/views/components/margin.html">Margin</a>
+              </li>
               <li class="drawer-item drawer-item-heading">
-                <a href="#"
+                <a href="/views/components/typography.html"
                   ><i class="drawer-item-icon bi bi-file-font"></i>Typography</a
                 >
               </li>
@@ -236,6 +267,7 @@
                   </div>
                 </div>
               </div>
+              <br><br>
               <p>
                 <iframe
                   src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=719&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=148%25&si=false&es=2x&wm=false&code=%253C%21--%2520Error%2520Input%2520field%2520--%253E%250A%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%253Clabel%2520for%253D%2522inputId%2522%253EUsername%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522text%2522%2520id%253D%2522inputId%2522%2520placeholder%253D%2522Username%2522%250A%2520%2520class%253D%2522input-control%2520input-error%2522%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-error-msg%2522%253E%250A%2520%2520%2520%2520Please%2520enter%2520valid%2520username%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522form-group%2520form-group-row%2522%253E%250A%2520%2520%253Clabel%2520for%253D%2522inputId%2522%253EUsername%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522text%2522%2520id%253D%2522inputId%2522%2520placeholder%253D%2522Username%2522%250A%2520%2520%2520%2520class%253D%2522input-control%2520input-error%2522%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input-error-msg%2522%253E%250A%2520%2520%2520%2520Please%2520enter%2520valid%2520username%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"

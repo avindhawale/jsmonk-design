@@ -40,9 +40,11 @@
   --bg-light: linear-gradient(#ededf3, #d8d8e9);
   --bg-light-content: #ededf3;
   --bg-light-border-color: #868788;
+  --bg-light-header: #476bab;
+  --bg-light-link: #476bab;
 
   --bg-dracula: linear-gradient(#13171c, #13171c);
-  --bg-dracula-content: rgba(180, 154, 234, 0.1);
+  --bg-dracula-content: #232531;
   --text-color-dracula: #c5c7ca;
 
   /* Width */

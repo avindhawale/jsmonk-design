@@ -25,6 +25,9 @@
   background-color: var(--gray-charcoal);
   color: var(--black);
 }
+.theme-default .header-menu-wrapper .right-menus .menu-icon {
+  color: var(--green);
+}
 
 /* --------- Light Theme ---------- */
 
@@ -33,7 +36,7 @@
   background: var(--bg-light);
 }
 .theme-light .header {
-  background: var(--bg-content);
+  background: var(--bg-light-header);
   z-index: 1;
 }
 .theme-light .border-color {
@@ -41,20 +44,34 @@
 }
 .theme-light .logo-title,
 .theme-light .logo-subtitle,
-.theme-light .drawer-head-title,
-.theme-light a.link {
-  color: var(--green);
+.theme-light .right-menus .menu-icon,
+.theme-light .right-menus i {
+  color: var(--white);
 }
+
+.theme-light a.link,
+.theme-light .drawer-wrapper .drawer-list .drawer-item a:hover,
+.theme-light .drawer-wrapper .drawer-list .drawer-item a.active,
 .theme-light a.link-footer {
-  color: var(--cyan);
+  color: var(--bg-light-link);
+  font-family: "Poppins-SemiBold";
 }
 
 .theme-light code {
-  background-color: var(--gray-charcoal);
+  background-color: var(--gray-light);
   color: var(--black);
 }
+.theme-light p {
+  font-family: "Poppins-Regular";
+}
+.theme-light .drawer-wrapper .drawer-list .drawer-item a,
+.theme-light .drawer-head-title,
+.theme-light .drawer-wrapper .drawer-list .drawer-item .drawer-item-icon {
+  color: var(--dark);
+  font-family: "Poppins-Regular";
+}
 
-/* --------- Default Theme ---------- */
+/* --------- Dracula Theme ---------- */
 
 .theme-dracula {
   color: var(--text-color-dracula);
@@ -70,8 +87,10 @@
 .theme-dracula .logo-title,
 .theme-dracula .logo-subtitle,
 .theme-dracula .drawer-head-title,
-.theme-dracula a.link {
-  color: var(--green);
+.theme-dracula a.link,
+.theme-dracula .right-menus .menu-icon,
+.theme-dracula .right-menus i {
+  color: var(--white);
 }
 .theme-dracula a.link-footer {
   color: var(--cyan);

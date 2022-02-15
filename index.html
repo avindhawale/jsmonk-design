@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>JSMonk UI Component library - themes</title>
+    <title>JSMonk UI Component library - Introduction</title>
+    <script src="/js/index.js" defer></script>
   </head>
   <body>
-    <div class="main-container theme-default">
+    <div id="main-container" class="main-container theme-light">
       <!-- Header  -->
       <div class="header mb-5 box-shadow-medium">
         <div class="header-logo-wrapper px-5 py-2">
@@ -17,13 +18,22 @@
             <span class="logo-subtitle">component library</span>
           </div>
         </div>
-        <div class="header-menu-wrapper"></div>
+        <div class="header-menu-wrapper">
+          <div class="center-menus"></div>
+          <div class="right-menus">
+            <div class="menu-icon" onclick="toggleTheme()"><i class="bi bi-gear"></i></i>Theme</div>
+            <a class="menu-icon" target="blank"
+                href="https://github.com/avindhawale/jsmonk-design/tree/jsmonk-design-dev"
+                class="menu-icon"
+              ><i class="bi bi-person"></i>Profile</a>
+          </div>
+        </div>
       </div>
       <div class="page">
         <div class="sidebar">
           <div class="drawer-wrapper m-2 box-shadow-medium">
             <div class="drawer-head border-bottom border-color px-5 py-2">
-              <a
+              <a target="blank"
                 href="https://github.com/avindhawale/jsmonk-design/tree/jsmonk-design-dev"
                 class="drawer-head-title"
               >
@@ -59,46 +69,43 @@
                 <a href="/views/components/badge.html">Badge</a>
               </li>
               <li class="drawer-item">
-                <a href="/views/components/alert.html">Button</a>
+                <a href="/views/components/button.html">Button</a>
               </li>
               <li class="drawer-item">
-                <a href="/views/components/alert.html">Card</a>
+                <a href="/views/components/cards.html">Card</a>
               </li>
               <li class="drawer-item">
-                <a href="/views/components/alert.html">Image</a>
+                <a href="/views/components/images.html">Image</a>
               </li>
               <li class="drawer-item">
-                <a href="/views/components/alert.html">Input</a>
+                <a href="/views/components/input.html">Input</a>
               </li>
               <li class="drawer-item">
-                <a href="/views/components/alert.html">Lists</a>
+                <a href="/views/components/list.html">Lists</a>
               </li>
               <li class="drawer-item">
-                <a href="/views/components/alert.html">Navigation</a>
+                <a href="/views/components/navigation.html">Navigation</a>
               </li>
               <li class="drawer-item">
-                <a href="/views/components/alert.html">Rating</a>
+                <a href="/views/components/rating.html">Rating</a>
               </li>
               <li class="drawer-item">
-                <a href="/views/components/alert.html">Toast/Notify</a>
+                <a href="/views/components/grid.html">Simplified Grid</a>
               </li>
               <li class="drawer-item">
-                <a href="/views/components/alert.html">Simplified Grid</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/alert.html">Slider</a>
+                <a href="/views/components/slider.html">Slider</a>
               </li>
               <li class="drawer-item drawer-item-heading">
                 <i class="drawer-item-icon bi bi-filter-square"></i>Spacing
               </li>
               <li class="drawer-item">
-                <a href="/views/components/alert.html">Padding</a>
+                <a href="/views/components/padding.html">Padding</a>
               </li>
               <li class="drawer-item">
-                <a href="/views/components/alert.html">Margin</a>
+                <a href="/views/components/margin.html">Margin</a>
               </li>
               <li class="drawer-item drawer-item-heading">
-                <a href="/views/components/alert.html"
+                <a href="/views/components/typography.html"
                   ><i class="drawer-item-icon bi bi-file-font"></i>Typography</a
                 >
               </li>
@@ -124,7 +131,7 @@
               <h3>Github Access</h3>
               <p>
                 <a
-                  class="link"
+                  class="link"  target="blank"
                   href="https://github.com/avindhawale/jsmonk-design/tree/jsmonk-design-dev"
                   >Click here</a
                 >
