@@ -1,279 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <title>JSMonk UI Component library - Alert</title>
-    <script src="/js/index.js" defer></script>
-  </head>
-  <body>
-    <div id="main-container" class="main-container theme-light">
-      <!-- Header  -->
-      <div class="header mb-5 box-shadow-medium">
-        <div class="header-logo-wrapper px-5 py-2">
-          <div class="logo">
-            <span class="logo-title">jsmonk ui</span>
-            <span class="logo-subtitle">component library</span>
-          </div>
-        </div>
-        <div class="header-menu-wrapper">
-          <div class="center-menus"></div>
-          <div class="right-menus">
-            <div class="menu-icon" onclick="toggleTheme()"><i class="bi bi-gear"></i></i>Theme</div>
-            <a class="menu-icon" target="blank"
-                href="https://github.com/avindhawale/jsmonk-design/tree/jsmonk-design-dev"
-                class="menu-icon"
-              ><i class="bi bi-person"></i>Profile</a>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <title>JSMonk UI Component library - Alert</title>
+  <script src="/js/index.js" defer></script>
+</head>
+
+<body>
+  <div id="main-container" class="main-container theme-light">
+    <!-- Header  -->
+    <div class="header mb-5 box-shadow-medium">
+      <div class="header-logo-wrapper px-5 py-2">
+        <div class="logo">
+          <span class="logo-title">jsmonk ui</span>
+          <span class="logo-subtitle">component library</span>
         </div>
       </div>
-      <div class="page">
-        <div class="sidebar">
-          <div class="drawer-wrapper m-2 box-shadow-medium">
-            <div class="drawer-head border-bottom border-color px-5 py-2">
-              <a target="blank"
-                href="https://github.com/avindhawale/jsmonk-design/tree/jsmonk-design-dev"
-                class="drawer-head-title"
-              >
-                <span class="drawer-head-title-icon"
-                  ><i class="bi bi-badge-ad-fill"></i
-                ></span>
-                <span class="drawer-head-title-text ml-3">JSMONK DESIGN</span>
-              </a>
-            </div>
-            <ul class="drawer-list px-5 py-2">
-              <li class="drawer-item drawer-item-heading">
-                <i class="drawer-item-icon bi bi-gear"></i>Getting started
-              </li>
-              <li class="drawer-item">
-                <a href="/index.html">Introduction</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/installation.html">Installation</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/themes.html">Themes</a>
-              </li>
-              <li class="drawer-item drawer-item-heading">
-                <i class="drawer-item-icon bi bi-hdd-stack"></i>Components
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/avatar.html">Avatar</a>
-              </li>
-              <li class="drawer-item">
-                <a class="active" href="/views/components/alert.html">Alert</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/badge.html">Badge</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/button.html">Button</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/cards.html">Card</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/images.html">Image</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/input.html">Input</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/list.html">Lists</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/navigation.html">Navigation</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/rating.html">Rating</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/grid.html">Simplified Grid</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/slider.html">Slider</a>
-              </li>
-              <li class="drawer-item drawer-item-heading">
-                <i class="drawer-item-icon bi bi-filter-square"></i>Spacing
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/padding.html">Padding</a>
-              </li>
-              <li class="drawer-item">
-                <a href="/views/components/margin.html">Margin</a>
-              </li>
-              <li class="drawer-item drawer-item-heading">
-                <a href="/views/components/typography.html"
-                  ><i class="drawer-item-icon bi bi-file-font"></i>Typography</a
-                >
-              </li>
-            </ul>
-          </div>
+      <div class="header-menu-wrapper">
+        <div class="center-menus"></div>
+        <div class="right-menus">
+          <div class="menu-icon" onclick="toggleTheme()"><i class="bi bi-gear"></i></i>Theme</div>
+          <a class="menu-icon" target="blank" href="https://github.com/avindhawale/jsmonk-design/tree/jsmonk-design-dev"
+            class="menu-icon"><i class="bi bi-person"></i>Profile</a>
         </div>
-        <section class="content">
-          <div class="content-body m-2 px-5 box-shadow-medium">
-            <div
-              class="content-body-title border-bottom px-5 py-2 mb-5 border-color"
-            >
-              <h2>Alert</h2>
-            </div>
-            <div class="content-body-details pb-5">
-              <p>
-                Provide contextual feedback messages for typical user actions
-                with the handful of available and flexible alert messages.
-              </p>
-              <h3>Alert simple</h3>
-              <div class="demo-component-wrapper m-5">
-                <div class="demo-component-alert-wrapper border p-5">
-                  <!-- Alert -->
-                  <div class="alert alert-primary">
-                    <span
-                      >alert-primary - Sample text information to alert
-                      user</span
-                    >
-                  </div>
-                  <div class="alert alert-secondary">
-                    <span
-                      >alert-secondary - Sample text information to alert
-                      user</span
-                    >
-                  </div>
-                  <div class="alert alert-success">
-                    <span
-                      >alert-success - Sample text information to alert
-                      user</span
-                    >
-                  </div>
-                  <div class="alert alert-info">
-                    <span
-                      >alert-info - Sample text information to alert user</span
-                    >
-                  </div>
-                  <div class="alert alert-danger">
-                    <span
-                      >alert-danger - Sample text information to alert
-                      user</span
-                    >
-                  </div>
-                  <div class="alert alert-warning">
-                    <span
-                      >alert-warning - Sample text information to alert
-                      user</span
-                    >
-                  </div>
-                  <div class="alert alert-transparent">
-                    <span
-                      >alert-transparent - Sample text information to alert
-                      user</span
-                    >
-                  </div>
+      </div>
+    </div>
+    <div class="page">
+      <div class="sidebar">
+        <div class="drawer-wrapper m-2 box-shadow-medium">
+          <div class="drawer-head border-bottom border-color px-5 py-2">
+            <a target="blank" href="https://github.com/avindhawale/jsmonk-design/tree/jsmonk-design-dev"
+              class="drawer-head-title">
+              <span class="drawer-head-title-icon"><i class="bi bi-badge-ad-fill"></i></span>
+              <span class="drawer-head-title-text ml-3">JSMONK DESIGN</span>
+            </a>
+          </div>
+          <ul class="drawer-list px-5 py-2">
+            <li class="drawer-item drawer-item-heading">
+              <i class="drawer-item-icon bi bi-gear"></i>Getting started
+            </li>
+            <li class="drawer-item">
+              <a href="/index.html">Introduction</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/installation.html">Installation</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/themes.html">Themes</a>
+            </li>
+            <li class="drawer-item drawer-item-heading">
+              <i class="drawer-item-icon bi bi-hdd-stack"></i>Components
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/avatar.html">Avatar</a>
+            </li>
+            <li class="drawer-item">
+              <a class="active" href="/views/components/alert.html">Alert</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/badge.html">Badge</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/button.html">Button</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/card.html">Card</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/image.html">Image</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/input.html">Input</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/list.html">List</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/navigation.html">Navigation</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/rating.html">Rating</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/grid.html">Simplified Grid</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/slider.html">Slider</a>
+            </li>
+            <li class="drawer-item drawer-item-heading">
+              <i class="drawer-item-icon bi bi-filter-square"></i>Spacing
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/padding.html">Padding</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/margin.html">Margin</a>
+            </li>
+            <li class="drawer-item drawer-item-heading">
+              <a href="/views/components/typography.html"><i class="drawer-item-icon bi bi-file-font"></i>Typography</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="content">
+        <div class="content-body m-2 px-5 box-shadow-medium">
+          <div class="content-body-title border-bottom px-5 py-2 mb-5 border-color">
+            <h2>Alert</h2>
+          </div>
+          <div class="content-body-details pb-5">
+            <p>
+              Provide contextual feedback messages for typical user actions
+              with the handful of available and flexible alert messages.
+            </p>
+            <h3>Alert simple</h3>
+            <div class="demo-component-wrapper m-5">
+              <div class="demo-component-alert-wrapper border p-5">
+                <!-- Alert -->
+                <div class="alert alert-primary">
+                  <span>alert-primary - Sample text information to alert
+                    user</span>
+                </div>
+                <div class="alert alert-secondary">
+                  <span>alert-secondary - Sample text information to alert
+                    user</span>
+                </div>
+                <div class="alert alert-success">
+                  <span>alert-success - Sample text information to alert
+                    user</span>
+                </div>
+                <div class="alert alert-info">
+                  <span>alert-info - Sample text information to alert user</span>
+                </div>
+                <div class="alert alert-danger">
+                  <span>alert-danger - Sample text information to alert
+                    user</span>
+                </div>
+                <div class="alert alert-warning">
+                  <span>alert-warning - Sample text information to alert
+                    user</span>
+                </div>
+                <div class="alert alert-transparent">
+                  <span>alert-transparent - Sample text information to alert
+                    user</span>
                 </div>
               </div>
-              <p>
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253C%21--%2520Alert%2520--%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520%253Cspan%253Ealert-primary%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253E%250A%2520%2520%253Cspan%253Ealert-secondary%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520%253Cspan%253Ealert-success%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253E%250A%2520%2520%253Cspan%253Ealert-info%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%250A%2520%2520%253Cspan%253Ealert-danger%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2520%2520%253Cspan%253Ealert-warning%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-transparent%2522%253E%250A%2520%2520%253Cspan%253Ealert-transparent%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
-                  style="
+            </div>
+            <p>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253C%21--%2520Alert%2520--%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520%253Cspan%253Ealert-primary%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253E%250A%2520%2520%253Cspan%253Ealert-secondary%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520%253Cspan%253Ealert-success%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253E%250A%2520%2520%253Cspan%253Ealert-info%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%250A%2520%2520%253Cspan%253Ealert-danger%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2520%2520%253Cspan%253Ealert-warning%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-transparent%2522%253E%250A%2520%2520%253Cspan%253Ealert-transparent%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                style="
                     width: 783px;
                     height: 728px;
                     border: 0;
                     transform: scale(1);
                     overflow: hidden;
-                  "
-                  sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
-              </p>
-              <!-- Alert close -->
-              <h3>Alert close</h3>
-              <div class="demo-component-wrapper m-5">
-                <div class="demo-component-alert-wrapper border p-5">
-                  <div class="alert alert-primary">
-                    <span
-                      >alert-primary - Sample text information to alert
-                      user</span
-                    >
-                    <span class="close">X</span>
-                  </div>
-                  <div class="alert alert-secondary">
-                    <span
-                      >alert-secondary - Sample text information to alert
-                      user</span
-                    >
-                    <span class="close">X</span>
-                  </div>
-                  <div class="alert alert-success">
-                    <span
-                      >alert-success - Sample text information to alert
-                      user</span
-                    >
-                    <span class="close">X</span>
-                  </div>
-                  <div class="alert alert-info">
-                    <span
-                      >alert-info - Sample text information to alert user</span
-                    >
-                    <span class="close">X</span>
-                  </div>
-                  <div class="alert alert-danger">
-                    <span
-                      >alert-danger - Sample text information to alert
-                      user</span
-                    >
-                    <span class="close">X</span>
-                  </div>
-                  <div class="alert alert-warning">
-                    <span
-                      >alert-warning - Sample text information to alert
-                      user</span
-                    >
-                    <span class="close">X</span>
-                  </div>
-                  <div class="alert alert-transparent">
-                    <span
-                      >alert-transparent - Sample text information to alert
-                      user</span
-                    >
-                    <span class="close">X</span>
-                  </div>
+                  " sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </p>
+            <!-- Alert close -->
+            <h3>Alert close</h3>
+            <div class="demo-component-wrapper m-5">
+              <div class="demo-component-alert-wrapper border p-5">
+                <div class="alert alert-primary">
+                  <span>alert-primary - Sample text information to alert
+                    user</span>
+                  <span class="close">X</span>
+                </div>
+                <div class="alert alert-secondary">
+                  <span>alert-secondary - Sample text information to alert
+                    user</span>
+                  <span class="close">X</span>
+                </div>
+                <div class="alert alert-success">
+                  <span>alert-success - Sample text information to alert
+                    user</span>
+                  <span class="close">X</span>
+                </div>
+                <div class="alert alert-info">
+                  <span>alert-info - Sample text information to alert user</span>
+                  <span class="close">X</span>
+                </div>
+                <div class="alert alert-danger">
+                  <span>alert-danger - Sample text information to alert
+                    user</span>
+                  <span class="close">X</span>
+                </div>
+                <div class="alert alert-warning">
+                  <span>alert-warning - Sample text information to alert
+                    user</span>
+                  <span class="close">X</span>
+                </div>
+                <div class="alert alert-transparent">
+                  <span>alert-transparent - Sample text information to alert
+                    user</span>
+                  <span class="close">X</span>
                 </div>
               </div>
-              <p>
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253C---%2520Alert%2520close%2520---%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520%253Cspan%253Ealert-primary%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522close%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253E%250A%2520%2520%253Cspan%253Ealert-secondary%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522close%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520%253Cspan%253Ealert-success%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522close%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253E%250A%2520%2520%253Cspan%253Ealert-info%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522close%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%250A%2520%2520%253Cspan%253Ealert-danger%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522close%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2520%2520%253Cspan%253Ealert-warning%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522close%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-transparent%2522%253E%250A%2520%2520%253Cspan%253Ealert-transparent%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522close%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
-                  style="
+            </div>
+            <p>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253C---%2520Alert%2520close%2520---%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520%253Cspan%253Ealert-primary%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522close%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253E%250A%2520%2520%253Cspan%253Ealert-secondary%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522close%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520%253Cspan%253Ealert-success%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522close%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253E%250A%2520%2520%253Cspan%253Ealert-info%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522close%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%250A%2520%2520%253Cspan%253Ealert-danger%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522close%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2520%2520%253Cspan%253Ealert-warning%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522close%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-transparent%2522%253E%250A%2520%2520%253Cspan%253Ealert-transparent%2520-%2520Sample%2520text%2520information%2520to%2520alert%2520user%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522close%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                style="
                     width: 783px;
                     height: 867px;
                     border: 0;
                     transform: scale(1);
                     overflow: hidden;
-                  "
-                  sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
-              </p>
-            </div>
-            <!-- Footer -->
-            <div class="content-body-footer p-5 border-top">
-              <a
-                href="/views/components/avatar.html"
-                class="link-footer text-lg"
-              >
-                <i class="bi bi-arrow-left-circle mr-2"></i>
-                Avatar
-              </a>
-              <a
-                href="/views/components/badge.html"
-                class="link-footer text-lg"
-              >
-                Badge
-                <i class="bi bi-arrow-right-circle ml-2"></i>
-              </a>
-            </div>
+                  " sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </p>
           </div>
-        </section>
-      </div>
+          <!-- Footer -->
+          <div class="content-body-footer p-5 border-top">
+            <a href="/views/components/avatar.html" class="link-footer text-lg">
+              <i class="bi bi-arrow-left-circle mr-2"></i>
+              Avatar
+            </a>
+            <a href="/views/components/badge.html" class="link-footer text-lg">
+              Badge
+              <i class="bi bi-arrow-right-circle ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

@@ -1,0 +1,30 @@
+ul.list,
+ol.list {
+  list-style: none;
+  margin-left: 1rem;
+}
+ul.list li,
+ol.list li {
+  padding-bottom: 0.5rem;
+}
+ul.list.list-ul {
+  list-style: circle;
+}
+ol.list.list-ol {
+  list-style: decimal;
+}
+ul.list.list-stack {
+  list-style: none;
+  border: 1px solid var(--gray-charcoal);
+  border-radius: 0.3rem;
+}
+ul.list.list-stack li {
+  list-style: none;
+  padding: 1rem;
+  border-top: 1px solid var(--gray-charcoal);
+}
+ul.list.list-stack li:nth-child(1) {
+  list-style: none;
+  padding: 1rem;
+  border: none;
+}

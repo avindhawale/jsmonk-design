@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/assets/css/style.css" />
-  <title>JSMonk UI Component library - Avatar</title>
+  <title>JSMonk UI Component library - Images</title>
   <script src="/js/index.js" defer></script>
 </head>
 
@@ -56,7 +56,7 @@
               <i class="drawer-item-icon bi bi-hdd-stack"></i>Components
             </li>
             <li class="drawer-item">
-              <a class="active" href="/views/components/avatar.html">Avatar</a>
+              <a href="/views/components/avatar.html">Avatar</a>
             </li>
             <li class="drawer-item">
               <a href="/views/components/alert.html">Alert</a>
@@ -71,7 +71,7 @@
               <a href="/views/components/card.html">Card</a>
             </li>
             <li class="drawer-item">
-              <a href="/views/components/image.html">Image</a>
+              <a class="active" href="/views/components/image.html">Image</a>
             </li>
             <li class="drawer-item">
               <a href="/views/components/input.html">Input</a>
@@ -109,77 +109,74 @@
       <section class="content">
         <div class="content-body m-2 px-5 box-shadow-medium">
           <div class="content-body-title border-bottom px-5 py-2 mb-5 border-color">
-            <h2>Avatar</h2>
+            <h2>Images</h2>
           </div>
           <div class="content-body-details pb-5">
             <p>
-              <b>JSMonk UI</b> provides different types of
-              <code>avatar</code> components with different sizes. Check the
-              below example.
+              Images play important role in website development. JSMonk
+              provides facility to use images in your website using simple
+              classes which makes your website more responsive and user
+              friendly. Check below examples how you can you images in
+              different ways.
             </p>
-            <h3>Avatar circle</h3>
+            <h3>Responsive image</h3>
             <p>
-              You can achieve different size of avatar by just adding
-              <code>av-xs</code>,<code>av-sm</code>,<code>av-md</code>,<code>av-lg</code>
-              and <code>av-xl</code> class as shown below.
+              Using responsive image component it simply adjust itself as per
+              the width size of the device in proportionate to width and
+              heigh.
             </p>
             <div class="demo-component-wrapper m-5">
-              <div class="demo-component-avatar-wrapper">
-                <!-- Avatar -->
-                <img src="/assets/images/avatar.svg" class="avatar av-xs" />
-                <img src="/assets/images/avatar.svg" class="avatar av-sm" />
-                <img src="/assets/images/avatar.svg" class="avatar av-md" />
-                <img src="/assets/images/avatar.svg" class="avatar av-lg" />
-                <img src="/assets/images/avatar.svg" class="avatar av-xl" />
+              <div class="demo-component-image-wrapper">
+                <!-- Responsive image -->
+                <img src="/assets/images/product_01.png" class="responsive-img" alt="product" />
               </div>
             </div>
             <p>
               <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%2509%2509%253C%21--%2520Avatar%2520--%253E%250A%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Favatar.svg%2522%2520class%253D%2522avatar%2520av-xs%2522%2520%252F%253E%250A%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Favatar.svg%2522%2520class%253D%2522avatar%2520av-sm%2522%2520%252F%253E%250A%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Favatar.svg%2522%2520class%253D%2522avatar%2520av-md%2522%2520%252F%253E%250A%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Favatar.svg%2522%2520class%253D%2522avatar%2520av-lg%2522%2520%252F%253E%250A%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Favatar.svg%2522%2520class%253D%2522avatar%2520av-xl%2522%2520%252F%253E%250A"
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=719&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=148%25&si=false&es=2x&wm=false&code=%253C%21--%2520Responsive%2520image%2520--%253E%250A%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Fproduct_01.png%2522%2520class%253D%2522responsive%2522%2520alt%253D%2522product%2522%253E"
                 style="
-                    width: 656px;
-                    height: 316px;
+                    width: 719px;
+                    height: 255px;
                     border: 0;
                     transform: scale(1);
                     overflow: hidden;
                   " sandbox="allow-scripts allow-same-origin">
               </iframe>
             </p>
-            <h3>Avatar square</h3>
+            <!-- Round image -->
+            <h3>Round image</h3>
             <p>
-              You can achieve square avatar by just adding
-              <code>av-sq</code> class as shown below.
+              Round image component is simple gives you facility to show your
+              image in round shape, check below example.
             </p>
             <div class="demo-component-wrapper m-5">
-              <div class="demo-component-avatar-wrapper">
-                <!-- Avatar Square-->
-                <img src="/assets/images/avatar.svg" class="avatar av-xs av-sq" />
-                <img src="/assets/images/avatar.svg" class="avatar av-sm av-sq" />
-                <img src="/assets/images/avatar.svg" class="avatar av-md av-sq" />
-                <img src="/assets/images/avatar.svg" class="avatar av-lg av-sq" />
-                <img src="/assets/images/avatar.svg" class="avatar av-xl av-sq" />
+              <div class="demo-component-image-wrapper">
+                <!-- Round image -->
+                <img src="/assets/images/product_02.png" class="responsive-img round-img" alt="product" />
               </div>
             </div>
-            <p>
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%2509%253C%21--%2520Avatar%2520Square--%253E%250A%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Favatar.svg%2522%2520class%253D%2522avatar%2520av-xs%2520av-sq%2522%252F%253E%250A%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Favatar.svg%2522%2520class%253D%2522avatar%2520av-sm%2520av-sq%2522%252F%253E%250A%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Favatar.svg%2522%2520class%253D%2522avatar%2520av-md%2520av-sq%2522%252F%253E%250A%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Favatar.svg%2522%2520class%253D%2522avatar%2520av-lg%2520av-sq%2522%252F%253E%250A%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Favatar.svg%2522%2520class%253D%2522avatar%2520av-xl%2520av-sq%2522%252F%253E"
-                style="
-                    width: 698px;
-                    height: 298px;
-                    border: 0;
-                    transform: scale(1);
-                    overflow: hidden;
-                  " sandbox="allow-scripts allow-same-origin">
-              </iframe>
-            </p>
           </div>
+          <p>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=719&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=148%25&si=false&es=2x&wm=false&code=%253C%21--%2520Round%2520image%2520--%253E%250A%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Fproduct_02.png%2522%2520class%253D%2522responsive-img%2520round-img%2522%2520alt%253D%2522product%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+              style="
+                  width: 719px;
+                  height: 278px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                " sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </p>
+
+          <!-- Footer -->
           <div class="content-body-footer p-5 border-top">
-            <a href="/views/themes.html" class="link-footer text-lg">
+            <a href="/views/components/card.html" class="link-footer text-lg">
               <i class="bi bi-arrow-left-circle mr-2"></i>
-              Theme
+              Card
             </a>
-            <a href="/views/components/alert.html" class="link-footer text-lg">
-              Alert
+            <a href="/views/components/input.html" class="link-footer text-lg">
+              Input
               <i class="bi bi-arrow-right-circle ml-2"></i>
             </a>
           </div>

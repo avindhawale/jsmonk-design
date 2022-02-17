@@ -19,6 +19,7 @@
 @import url("components/_image.css");
 @import url("components/_input.css");
 @import url("components/_navbar.css");
+@import url("components/_list.css");
 
 /* ------------- Theme CSS---------------- */
 @import url("utils/_theme.css");
