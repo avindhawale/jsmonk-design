@@ -7,8 +7,8 @@ JSMonk UI is a premium component material with a fresh, new design inspired by I
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+* There is no dependencies of any third party plugin.
+
 
 ### Installing
 
@@ -20,8 +20,7 @@ JSMonk UI is a premium component material with a fresh, new design inspired by I
 
 ## Authors
 
-Avin Dhawale  
-[@avin_dhawale](https://twitter.com/avin_dhawale)
+Avin Dhawale : [@avin_dhawale](https://twitter.com/avin_dhawale)
 
 ## Version History
 
