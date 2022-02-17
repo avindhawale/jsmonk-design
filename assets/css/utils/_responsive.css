@@ -1,0 +1,8 @@
+@media screen and (max-width: 991px) {
+  .navbar .navbar-brand-wrapper .brand-logo {
+    display: none;
+  }
+  .navbar .navbar-brand-wrapper .brand-logo-mini {
+    display: inline-block;
+  }
+}

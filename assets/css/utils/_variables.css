@@ -1,0 +1,71 @@
+/* color variables */
+
+:root {
+  --blue: #5e50f9;
+  --blueviolet: #8a2be2;
+  --indigo: #6610f2;
+  --purple: #6a008a;
+  --pink: #e91e63;
+  --red: #f96868;
+  --orange: #f2a654;
+  --yellow: #f6e84e;
+  --green: #46c35f;
+  --teal: #58d8a3;
+  --cyan: #57c7d4;
+  --white: #ffffff;
+  --gray: #434a54;
+  --gray-light: #aab2bd;
+  --gray-lighter: #e8eff4;
+  --gray-lightest: #e6e9ed;
+  --gray-charcoal: #868788;
+  --gray-dark: #0f1531;
+  --black-text: #333333;
+  --black: #000000;
+
+  /* Theme color */
+  --primary: #b66dff;
+  --secondary: #d8d8d8;
+  --success: #1bcfb4;
+  --info: #198ae3;
+  --warning: #fed713;
+  --danger: #fe7c96;
+  --light: #f8f9fa;
+  --dark: #3e4b5b;
+
+  /* Backgrounds */
+  --bg-dark: linear-gradient(#1e1e2f, #1e1e24);
+  --bg-dark-content: #27293d;
+  --bg-dark-border-color: rgba(255, 255, 255, 0.5);
+
+  --bg-light: linear-gradient(#ededf3, #d8d8e9);
+  --bg-light-content: #ededf3;
+  --bg-light-border-color: #868788;
+  --bg-light-header: #476bab;
+  --bg-light-link: #476bab;
+
+  --bg-dracula: linear-gradient(#13171c, #13171c);
+  --bg-dracula-content: #232531;
+  --text-color-dracula: #c5c7ca;
+
+  /* Width */
+  --width-full: 100%;
+  --width-sidebar: 300px;
+
+  /* Height */
+  --height-full: 100%;
+  --height-header: 110px;
+
+  /* Border */
+  --br-full: 100%;
+  --br-sm: 10%;
+
+  /* Button */
+  --full-radius: 5rem;
+  --btn-shadow: 0px 0px 10px 10px rgb(0 0 0 / 25%);
+
+  /* Card */
+  --radius-sm: 3px;
+  --radius-md: 5px;
+  --radius-lg: 10px;
+  --radius-full: 100%;
+}

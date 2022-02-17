@@ -1,0 +1,158 @@
+/*
+ * Created on Wed Feb 02 2022
+ * Copyright (c) 2022 Avin Dhawale
+ *
+ * Owner : Avin Dhawale
+ * @email : avin.dhawale@gmail.com
+ * @git : https://github.com/avindhawale
+ *
+ * Filename : _typography.css
+ * Description : This file contains css realated to text and heading sizes
+ *
+ */
+
+/* Typography */
+body {
+  font-size: 1rem;
+  font-family: "ubuntu-regular", sans-serif;
+  font-weight: initial;
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Poppins-Regular";
+}
+
+/* Heading */
+h1,
+.h1 {
+  font-size: 4rem;
+}
+h2,
+.h2 {
+  font-size: 2rem;
+}
+h3,
+.h3 {
+  font-size: 1.5rem;
+}
+h4,
+.h4 {
+  font-size: 1rem;
+}
+h5,
+.h5 {
+  font-size: 0.8rem;
+}
+h6,
+.h6 {
+  font-size: 0.5rem;
+}
+
+/* Text */
+.text-xs {
+  font-size: 0.75rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+}
+.text-base {
+  font-size: 1rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+}
+
+/* Font weight */
+.font-light {
+  font-weight: 300;
+}
+.font-regular {
+  font-weight: 400;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-black {
+  font-weight: 900;
+}
+
+p {
+  margin: 0px 20px 20px 20px;
+  line-height: 2;
+  font-family: "Poppins-Light";
+}
+
+a.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.link-footer {
+  text-decoration: none;
+  cursor: pointer;
+}
+a.link-footer:hover {
+  text-decoration: underline;
+}
+code {
+  padding: 0px 5px;
+  border-radius: 2px;
+}
+
+/* color text */
+.text-primary {
+  color: var(--primary);
+}
+.text-secondary {
+  color: var(--secondary);
+}
+.text-success {
+  color: var(--success);
+}
+.text-warning {
+  color: var(--warning);
+}
+.text-danger {
+  color: var(--danger);
+}
+.text-info {
+  color: var(--info);
+}
+
+/* Background color  */
+.bg-primary {
+  background-color: var(--primary);
+}
+.bg-secondary {
+  background-color: var(--secondary);
+}
+.bg-success {
+  background-color: var(--success);
+}
+.bg-warning {
+  background-color: var(--warning);
+}
+.bg-danger {
+  background-color: var(--danger);
+}
+.bg-info {
+  background-color: var(--info);
+}

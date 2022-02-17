@@ -1,0 +1,230 @@
+/*
+ * Created on Wed Feb 02 2022
+ * Copyright (c) 2022 Avin Dhawale
+ *
+ * Owner : Avin Dhawale
+ * @email : avin.dhawale@gmail.com
+ * @git : https://github.com/avindhawale
+ *
+ * Filename : _layout.css
+ * Description : This is file contains css related to the layout of the page.
+ *
+ */
+
+.main-container {
+  font-family: "Poppins-Light";
+  font-size: 0.875rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.main-container i::before {
+  vertical-align: middle;
+}
+
+/* ----------- Header ------------- */
+.main-container .header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+}
+
+.main-container .header .header-logo-wrapper {
+  width: var(--width-sidebar);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logo .logo-title {
+  font-size: 40px;
+  font-family: sans-serif;
+  line-height: 1;
+}
+.logo .logo-subtitle {
+  font-family: sans-serif;
+  padding: 3px 10px;
+  border: 1px solid;
+  border-radius: 3px px;
+  margin: 5px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.main-container .header .header-menu-wrapper {
+  width: calc(var(--width-full) - var(--width-sidebar));
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-menu-wrapper .center-menus,
+.header-menu-wrapper .right-menus {
+}
+.header-menu-wrapper .right-menus {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header-menu-wrapper .right-menus .menu-icon {
+  padding: 1rem;
+  margin: 0 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+.header-menu-wrapper .right-menus .menu-icon i {
+  font-size: 1.5rem;
+}
+
+/* --------------- Page ---------------- */
+.main-container .page {
+  display: flex;
+  flex-direction: row;
+}
+.main-container .page .sidebar {
+  width: var(--width-sidebar);
+}
+.main-container .page .content {
+  width: calc(var(--width-full) - var(--width-sidebar));
+  min-height: calc(var(--height-full) - var(--height-header));
+}
+.main-container .page .content .content-body .content-body-title h2 {
+  font-family: "Poppins-Thin";
+}
+.main-container .page .content .content-body .content-body-details h3 {
+  margin: 0px 20px;
+  font-family: "Poppins-Thin";
+}
+.main-container .page .content .content-body .content-body-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-container .color-wrapper .colors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 400px;
+}
+.main-container .color-wrapper .colors .color {
+  width: 115px;
+  padding: 1rem;
+  text-align: center;
+  margin-right: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.color.blue {
+  background-color: var(--blue);
+}
+.color.indigo {
+  background-color: var(--indigo);
+}
+.color.purple {
+  background-color: var(--purple);
+}
+.color.pink {
+  background-color: var(--pink);
+}
+.color.red {
+  background-color: var(--red);
+}
+.color.orange {
+  background-color: var(--orange);
+}
+.color.yellow {
+  background-color: var(--yellow);
+}
+.color.green {
+  background-color: var(--green);
+}
+.color.teal {
+  background-color: var(--teal);
+}
+.color.cyan {
+  background-color: var(--cyan);
+}
+.color.white {
+  background-color: var(--white);
+}
+.color.gray {
+  background-color: var(--gray);
+}
+.color.gray-light {
+  background-color: var(--gray-light);
+}
+.color.gray-lighter {
+  background-color: var(--gray-lighter);
+}
+.color.gray-lightest {
+  background-color: var(--gray-lightest);
+}
+.color.gray-charcoal {
+  background-color: var(--gray-charcoal);
+}
+.color.gray-dark {
+  background-color: var(--gray-dark);
+}
+.color.black {
+  background-color: var(--black);
+}
+
+.demo-component-avatar-wrapper img {
+  margin-right: 1rem;
+}
+.demo-component-alert-wrapper {
+  border-radius: 0.25rem;
+}
+.demo-component-badge-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.demo-component-badge-wrapper .badge-wrapper {
+  margin-right: 1rem;
+}
+.demo-component-badge-wrapper .badge-count-wrapper {
+  margin-right: 2rem;
+}
+.badge-count-wrapper i {
+  font-size: 3rem;
+}
+.demo-component-button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.demo-component-button-wrapper button {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+.demo-component-image-wrapper,
+.demo-component-input-wrapper {
+  width: 50%;
+}
+.demo-component-navbar-wrapper,
+.demo-component-typo-wrapper {
+  width: 80%;
+  margin-bottom: 1rem;
+}
+.typo-details p {
+  margin-bottom: 0;
+}
+.gen-wrapper {
+  width: 50%;
+}
+.gen-wrapper ul {
+  list-style: disc;
+  font-family: "Poppins-Regular";
+}
