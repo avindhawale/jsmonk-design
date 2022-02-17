@@ -1,0 +1,44 @@
+.navbar,
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  background: var(--black);
+  flex-wrap: wrap;
+  border-radius: 0.3rem;
+  position: relative;
+}
+.navbar.nav-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.navbar.nav-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.navbar .nav-item {
+  padding: 0.8rem 1rem;
+}
+.navbar .nav-item a {
+  color: var(--white);
+  font-family: "Poppins-Regular";
+  text-decoration: none;
+}
+.navbar .nav-item a.active,
+.navbar .nav-item a:hover {
+  text-decoration: underline;
+}
+.navbar .nav-item.nav-submenu ul.submenu-list {
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+.navbar .nav-item.nav-submenu ul.submenu-list li.submenu-item {
+  padding: 1rem 2rem;
+}
+.navbar .nav-item.nav-submenu:hover ul.submenu-list {
+  display: flex;
+}

@@ -1,0 +1,25 @@
+/* --------- Utility CSS --------- */
+
+@import url("utils/_reset.css");
+@import url("utils/_fonts.css");
+@import url("utils/_icons.css");
+@import url("utils/_variables.css");
+@import url("utils/_spacing.css");
+@import url("utils/_typography.css");
+@import url("utils/_generic.css");
+@import url("utils/_layout.css");
+
+/* ------------- Components CSS---------------- */
+@import url("components/_drawer.css");
+@import url("components/_avatar.css");
+@import url("components/_alert.css");
+@import url("components/_badge.css");
+@import url("components/_button.css");
+@import url("components/_card.css");
+@import url("components/_image.css");
+@import url("components/_input.css");
+@import url("components/_navbar.css");
+@import url("components/_list.css");
+
+/* ------------- Theme CSS---------------- */
+@import url("utils/_theme.css");

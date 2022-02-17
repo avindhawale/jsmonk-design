@@ -1,0 +1,104 @@
+/* --------- Default Theme ---------- */
+
+.theme-default {
+  color: var(--text-color-dracula);
+  background: var(--bg-dark);
+}
+.theme-default .header {
+  background: var(--bg-dark);
+  z-index: 1;
+}
+.theme-default .border-color {
+  border-color: var(--bg-dark-border-color);
+}
+.theme-default .logo-title,
+.theme-default .logo-subtitle,
+.theme-default .drawer-head-title,
+.theme-default a.link {
+  color: var(--green);
+}
+.theme-default a.link-footer {
+  color: var(--cyan);
+}
+
+.theme-default code {
+  background-color: var(--gray-charcoal);
+  color: var(--black);
+}
+.theme-default .header-menu-wrapper .right-menus .menu-icon {
+  color: var(--green);
+}
+
+/* --------- Light Theme ---------- */
+
+.theme-light {
+  color: var(--dark);
+  background: var(--bg-light);
+}
+.theme-light .header {
+  background: var(--bg-light-header);
+  z-index: 1;
+}
+.theme-light .border-color {
+  border-color: var(--bg-light-border-color);
+}
+.theme-light .logo-title,
+.theme-light .logo-subtitle,
+.theme-light .right-menus .menu-icon,
+.theme-light .right-menus i {
+  color: var(--white);
+}
+
+.theme-light a.link,
+.theme-light .drawer-wrapper .drawer-list .drawer-item a:hover,
+.theme-light .drawer-wrapper .drawer-list .drawer-item a.active,
+.theme-light a.link-footer {
+  color: var(--bg-light-link);
+  font-family: "Poppins-SemiBold";
+}
+
+.theme-light code {
+  background-color: var(--gray-light);
+  color: var(--black);
+}
+.theme-light p {
+  font-family: "Poppins-Regular";
+}
+.theme-light .drawer-wrapper .drawer-list .drawer-item a,
+.theme-light .drawer-head-title,
+.theme-light .drawer-wrapper .drawer-list .drawer-item .drawer-item-icon {
+  color: var(--dark);
+  font-family: "Poppins-Regular";
+}
+
+/* --------- Dracula Theme ---------- */
+
+.theme-dracula {
+  color: var(--text-color-dracula);
+  background: var(--bg-dracula);
+}
+.theme-dracula .header {
+  background: var(--bg-dracula-content);
+  z-index: 1;
+}
+.theme-dracula .border-color {
+  border-color: var(--bg-dark-border-color);
+}
+.theme-dracula .logo-title,
+.theme-dracula .logo-subtitle,
+.theme-dracula .drawer-head-title,
+.theme-dracula a.link,
+.theme-dracula .right-menus .menu-icon,
+.theme-dracula .right-menus i {
+  color: var(--white);
+}
+.theme-dracula a.link-footer {
+  color: var(--cyan);
+}
+
+.theme-dracula code {
+  background-color: var(--gray-charcoal);
+  color: var(--black);
+}
+
+/* --------- Dracula Theme ---------- */

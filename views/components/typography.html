@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <title>JSMonk UI Component library - Introduction</title>
+  <script src="/js/index.js" defer></script>
+  <script src="/js/index.js" defer></script>
+</head>
+
+<body>
+  <div id="main-container" class="main-container theme-light">
+    <!-- Header  -->
+    <div class="header mb-5 box-shadow-medium">
+      <div class="header-logo-wrapper px-5 py-2">
+        <div class="logo">
+          <span class="logo-title">jsmonk ui</span>
+          <span class="logo-subtitle">component library</span>
+        </div>
+      </div>
+      <div class="header-menu-wrapper">
+        <div class="center-menus"></div>
+        <div class="right-menus">
+          <div class="menu-icon" onclick="toggleTheme()"><i class="bi bi-gear"></i></i>Theme</div>
+          <a class="menu-icon" target="blank" href="https://github.com/avindhawale/jsmonk-design/tree/jsmonk-design-dev"
+            class="menu-icon"><i class="bi bi-person"></i>Profile</a>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <div class="sidebar">
+        <div class="drawer-wrapper m-2 box-shadow-medium">
+          <div class="drawer-head border-bottom border-color px-5 py-2">
+            <a target="blank" href="https://github.com/avindhawale/jsmonk-design/tree/jsmonk-design-dev"
+              class="drawer-head-title">
+              <span class="drawer-head-title-icon"><i class="bi bi-badge-ad-fill"></i></span>
+              <span class="drawer-head-title-text ml-3">JSMONK DESIGN</span>
+            </a>
+          </div>
+          <ul class="drawer-list px-5 py-2">
+            <li class="drawer-item drawer-item-heading">
+              <i class="drawer-item-icon bi bi-gear"></i>Getting started
+            </li>
+            <li class="drawer-item">
+              <a href="/index.html">Introduction</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/installation.html">Installation</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/themes.html">Themes</a>
+            </li>
+            <li class="drawer-item drawer-item-heading">
+              <i class="drawer-item-icon bi bi-hdd-stack"></i>Components
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/avatar.html">Avatar</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/alert.html">Alert</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/badge.html">Badge</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/button.html">Button</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/card.html">Card</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/image.html">Image</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/input.html">Input</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/list.html">List</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/navigation.html">Navigation</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/rating.html">Rating</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/grid.html">Simplified Grid</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/slider.html">Slider</a>
+            </li>
+            <li class="drawer-item drawer-item-heading">
+              <i class="drawer-item-icon bi bi-filter-square"></i>Spacing
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/padding.html">Padding</a>
+            </li>
+            <li class="drawer-item">
+              <a href="/views/components/margin.html">Margin</a>
+            </li>
+            <li class="drawer-item drawer-item-heading">
+              <a class="active" href="/views/components/typography.html"><i
+                  class="drawer-item-icon bi bi-file-font"></i>Typography</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="content">
+        <div class="content-body m-2 px-5 box-shadow-medium">
+          <div class="content-body-title border-bottom px-5 py-2 mb-5 border-color">
+            <h2>Typography</h2>
+          </div>
+          <div class="content-body-details typo-details">
+            <h3>Heading</h3>
+            <p>
+              Add tags <code>h1</code> to <code>h6</code> or class <code>.h1</code> to <code>.h6</code>
+            </p>
+          </div>
+          <div class="pb-5">
+            <div class="demo-component-wrapper m-5">
+              <div class="demo-component-typo-wrapper">
+                <h1>h1 - heading</h1>
+                <hr>
+                <h2>h2 - heading</h2>
+                <hr>
+                <h3>h3 - heading</h3>
+                <hr>
+                <h4>h4 - heading</h4>
+                <hr>
+                <h5>h5 - heading</h5>
+                <hr>
+                <h6>h6 - heading</h6>
+                <hr>
+              </div>
+            </div>
+          </div>
+          <div class="content-body-details pb-5">
+            <h3>Paragraph</h3>
+            <p>
+              Write text in <code>p</code> tag
+            </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley not only five centuries</p>
+
+            <h3>Text colors</h3>
+            <p>Use class <code>.text-primary</code>, <code>.text-secondary</code> etc. for text in theme colors</p>
+            <p class="text-primary">.text-primary</p>
+            <p class="text-secondary">.text-secondary</p>
+            <p class="text-success">.text-success</p>
+            <p class="text-danger">.text-danger</p>
+            <p class="text-warning">.text-warning</p>
+            <p class="text-info">.text-info</p>
+
+            <h3>Highlighted Text</h3>
+            <p>Wrap the text in <code>&lt;code&gt;</code> to highlight text </p>
+            <p>
+              It is a long <code>established</code> fact that a reader will be distracted by the readable
+              content of a page when looking at its layout.
+              The point of using <code>Lorem Ipsum</code> is that it has a more-or-less normal distribution
+            </p>
+          </div>
+          <!-- Footer -->
+          <div class="content-body-footer p-5 border-top">
+            <a href="/views/components/margin.html" class="link-footer text-lg">
+              <i class="bi bi-arrow-left-circle mr-2"></i>
+              Margin
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group.form-group-row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  position: relative;
+}
+.form-group label {
+  font-size: 0.875rem;
+  line-height: 1;
+  vertical-align: top;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+.form-group.form-group-row label {
+  margin-right: 1rem;
+  width: 150px;
+}
+.input-control {
+  font-size: 0.8125rem;
+  box-shadow: none;
+  display: block;
+  width: calc(100% - 1.6rem);
+  padding: 0.8rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--gray-charcoal);
+  background-color: var(--white);
+  background-clip: padding-box;
+  border: 1px solid var(--gray-light);
+  border-radius: 2px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  outline: aqua;
+}
+.input-control:focus {
+  background-color: var(--white);
+  border-color: var(--cyan);
+  color: var(--black-text);
+}
+
+.form-group .input-control.input-error {
+  background-image: url("/assets/images/error_icon.png");
+  background-repeat: no-repeat;
+  background-position: 99%;
+  background-size: 1.5rem;
+  border: 1px solid var(--danger);
+}
+
+.form-group .input-control.input-error:focus {
+  border-color: var(--danger);
+}
+.form-group .input-error-msg {
+  color: var(--danger);
+  margin-top: 0.5rem;
+}
+.form-group.form-group-row .input-error-msg {
+  position: absolute;
+  top: 2.5rem;
+  left: 125px;
+}

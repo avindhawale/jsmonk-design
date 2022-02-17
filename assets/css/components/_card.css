@@ -1,0 +1,139 @@
+.card {
+  border-radius: var(--radius-sm);
+  background: var(--white);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  padding: 1rem;
+  cursor: pointer;
+  position: relative;
+  width: 350px;
+  font-family: "Poppins-Regular";
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+.card p {
+  margin: 1rem 0rem;
+  font-family: "Poppins-Regular";
+}
+.card .dismiss {
+  position: absolute;
+  right: 1rem;
+  top: 1.25rem;
+}
+.card .dismiss i {
+  font-size: 1.5rem;
+}
+
+.card .card-simple img {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  max-height: 120px;
+}
+
+.card .profile-wrapper {
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.card .profile-wrapper .address {
+  color: var(--gray-charcoal);
+  text-align: center;
+  margin: 0.5rem 0rem;
+}
+
+.card .profile-wrapper .description {
+  margin: 0.5rem 0rem;
+}
+
+.card-btn-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.card-btn-container .btn {
+  width: 100px;
+  min-width: auto;
+  padding: 0.5rem;
+}
+.card.card-profile {
+  padding: 0rem;
+}
+.card .card-btn-footer {
+  background-color: var(--gray-charcoal);
+  padding: 1rem 2rem;
+  text-align: left;
+  color: var(--black-text);
+}
+
+.card .card-btn-footer .tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card .card-btn-footer .tags span {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--black-text);
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--black-text);
+}
+
+.card.card-product {
+  padding: 0rem;
+}
+.card.card-product .product-wrapper {
+  text-align: center;
+}
+
+.card.card-product .product-wrapper .img-wrapper {
+  text-align: center;
+}
+.card.card-product .product-wrapper .img-wrapper img {
+  width: 100%;
+  height: auto;
+}
+.card-product .a-price {
+  font-size: 1.25rem;
+  color: var(--red);
+  text-decoration: none;
+  position: relative;
+  line-height: normal;
+  display: flex;
+  padding: 1rem;
+}
+.card-product .a-price .a-price-symbol {
+  top: -0.5em;
+  font-size: 0.8125rem;
+  position: relative;
+}
+.card-product .a-price .a-price-whole {
+  font-size: 1.5rem;
+}
+.card-product .old-price {
+  text-decoration: line-through;
+  color: var(--gray-charcoal);
+  font-size: 1rem;
+}
+.card-product .card-badge {
+  background: url(/assets/images/badge_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0px;
+  top: -2px;
+  width: 45px;
+  height: 60px;
+  color: var(--white);
+}
+.card-product .card-btn-container {
+  margin-bottom: 1rem;
+  justify-content: space-around;
+}
