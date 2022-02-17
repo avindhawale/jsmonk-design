@@ -18,13 +18,6 @@ JSMonk UI is a premium component material with a fresh, new design inspired by I
 <link rel="stylesheet" href="assets/css/style.css" />
 ```
 
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
 ## Authors
 
 Avin Dhawale  
