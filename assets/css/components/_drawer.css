@@ -1,0 +1,54 @@
+.drawer-wrapper {
+}
+
+.drawer-wrapper .drawer-head {
+}
+
+.drawer-wrapper .drawer-head .drawer-head-title {
+  text-decoration: none;
+  font-size: 1rem;
+}
+.drawer-wrapper .drawer-head .drawer-head-title .drawer-head-title-icon {
+  font-size: 2rem;
+}
+.drawer-wrapper .drawer-head .drawer-head-title .drawer-head-title-text {
+  vertical-align: middle;
+}
+.drawer-wrapper .drawer-list {
+}
+.drawer-wrapper .drawer-list .drawer-item {
+  border-radius: 30px;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 5px 10px 5px 35px;
+}
+.drawer-wrapper .drawer-list .drawer-item a {
+  text-decoration: none;
+  color: #c5c7ca;
+}
+.drawer-wrapper .drawer-list .drawer-item a.active {
+  color: var(--cyan);
+}
+.drawer-wrapper .drawer-list .drawer-item a::before {
+  content: "- ";
+}
+.drawer-wrapper .drawer-list .drawer-item.drawer-item-heading a::before {
+  content: "";
+}
+.drawer-wrapper .drawer-list .drawer-item .drawer-item-icon {
+  font-size: 1.5rem;
+  margin-right: 12px;
+  line-height: 30px;
+  width: 34px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+}
+.drawer-wrapper .drawer-list .drawer-item.drawer-item-heading {
+  font-weight: bold;
+  cursor: default;
+  padding: 5px 0px;
+}
