@@ -1,0 +1,57 @@
+.badge-wrapper,
+.badge-count-wrapper {
+  position: relative;
+}
+.badge-wrapper .badge {
+  position: absolute;
+  border-radius: var(--br-full);
+  height: 23%;
+  width: 25%;
+  bottom: 0.5rem;
+  right: 0rem;
+  border: 1px solid var(--black);
+}
+.badge-wrapper .badge.busy {
+  background-color: var(--red);
+}
+.badge-wrapper .badge.available {
+  background-color: var(--green);
+}
+.badge-wrapper .badge.offline {
+  background-color: var(--gray-charcoal);
+}
+.badge-wrapper .badge.away {
+  background-color: var(--warning);
+}
+.badge-wrapper .badge.badge-bl {
+  bottom: 0.5rem;
+  left: 0rem;
+}
+.badge-wrapper .badge.badge-tl {
+  top: 0.5rem;
+  left: 0rem;
+}
+.badge-wrapper .badge.badge-tr {
+  top: 0.5rem;
+  right: 0rem;
+}
+
+.badge-count-wrapper .badge {
+  position: absolute;
+  border-radius: var(--br-full);
+  top: 0rem;
+  right: -1rem;
+  border: 1px solid var(--black);
+  padding: 5px;
+  font-family: "Poppins-Regular";
+  color: var(--white);
+}
+.badge-count-wrapper .badge.red {
+  background-color: var(--pink);
+}
+.badge-count-wrapper .badge.green {
+  background-color: var(--green);
+}
+.badge-count-wrapper .badge.blue {
+  background-color: var(--info);
+}

@@ -1,0 +1,26 @@
+.avatar {
+  border-radius: var(--br-full);
+}
+.avatar.av-sq {
+  border-radius: var(--br-sm);
+}
+.avatar.av-xs {
+  width: 25px;
+  height: 25px;
+}
+.avatar.av-sm {
+  width: 45px;
+  height: 45px;
+}
+.avatar.av-md {
+  width: 65px;
+  height: 65px;
+}
+.avatar.av-lg {
+  width: 85px;
+  height: 85px;
+}
+.avatar.av-xl {
+  width: 115px;
+  height: 115px;
+}
