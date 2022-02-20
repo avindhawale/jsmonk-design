@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <title>JSMonk UI Component library - Badge</title>
+  <script src="../../js/index.js" defer></script>
+</head>
+
+<body>
+  <div id="main-container" class="main-container theme-light">
+    <!-- Header  -->
+    <div class="header mb-5 box-shadow-medium">
+      <div class="header-logo-wrapper px-5 py-2">
+        <div class="logo">
+          <span class="logo-title">jsmonk ui</span>
+          <span class="logo-subtitle">component library</span>
+        </div>
+      </div>
+      <div class="header-menu-wrapper">
+        <div class="center-menus"></div>
+        <div class="right-menus">
+          <div class="menu-icon" onclick="toggleTheme()"><i class="bi bi-gear"></i></i>Theme</div>
+          <a class="menu-icon" target="blank" href="https://github.com/avindhawale/jsmonk-design/tree/jsmonk-design-dev"
+            class="menu-icon"><i class="bi bi-person"></i>Profile</a>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <div class="sidebar">
+        <div class="drawer-wrapper m-2 box-shadow-medium">
+          <div class="drawer-head border-bottom border-color px-5 py-2">
+            <a target="blank" href="https://github.com/avindhawale/jsmonk-design/tree/jsmonk-design-dev"
+              class="drawer-head-title">
+              <span class="drawer-head-title-icon"><i class="bi bi-badge-ad-fill"></i></span>
+              <span class="drawer-head-title-text ml-3">JSMONK DESIGN</span>
+            </a>
+          </div>
+          <ul class="drawer-list px-5 py-2">
+            <li class="drawer-item drawer-item-heading">
+              <i class="drawer-item-icon bi bi-gear"></i>Getting started
+            </li>
+            <li class="drawer-item">
+              <a href="../../index.html">Introduction</a>
+            </li>
+            <li class="drawer-item">
+              <a href="../../views/installation.html">Installation</a>
+            </li>
+            <li class="drawer-item">
+              <a href="../../views/themes.html">Themes</a>
+            </li>
+            <li class="drawer-item drawer-item-heading">
+              <i class="drawer-item-icon bi bi-hdd-stack"></i>Components
+            </li>
+            <li class="drawer-item">
+              <a href="../../views/components/avatar.html">Avatar</a>
+            </li>
+            <li class="drawer-item">
+              <a href="../../views/components/alert.html">Alert</a>
+            </li>
+            <li class="drawer-item">
+              <a class="active" href="../../views/components/badge.html">Badge</a>
+            </li>
+            <li class="drawer-item">
+              <a href="../../views/components/button.html">Button</a>
+            </li>
+            <li class="drawer-item">
+              <a href="../../views/components/card.html">Card</a>
+            </li>
+            <li class="drawer-item">
+              <a href="../../views/components/image.html">Image</a>
+            </li>
+            <li class="drawer-item">
+              <a href="../../views/components/input.html">Input</a>
+            </li>
+            <li class="drawer-item">
+              <a href="../../views/components/list.html">List</a>
+            </li>
+            <li class="drawer-item">
+              <a href="../../views/components/navigation.html">Navigation</a>
+            </li>
+            <li class="drawer-item">
+              <a href="../../views/components/rating.html">Rating</a>
+            </li>
+            <li class="drawer-item">
+              <a href="../../views/components/grid.html">Simplified Grid</a>
+            </li>
+            <li class="drawer-item">
+              <a href="../../views/components/slider.html">Slider</a>
+            </li>
+            <li class="drawer-item drawer-item-heading">
+              <i class="drawer-item-icon bi bi-filter-square"></i>Spacing
+            </li>
+            <li class="drawer-item">
+              <a href="../../views/components/padding.html">Padding</a>
+            </li>
+            <li class="drawer-item">
+              <a href="../../views/components/margin.html">Margin</a>
+            </li>
+            <li class="drawer-item drawer-item-heading">
+              <a href="../../views/components/typography.html"><i
+                  class="drawer-item-icon bi bi-file-font"></i>Typography</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="content">
+        <div class="content-body m-2 px-5 box-shadow-medium">
+          <div class="content-body-title border-bottom px-5 py-2 mb-5 border-color">
+            <h2>Badges</h2>
+          </div>
+          <div class="content-body-details pb-5">
+            <p>
+              Badges can be used as part of links or buttons to provide a
+              counter.
+            </p>
+            <h3>Avatar status badge</h3>
+            <p>
+              Avatar badges can be used to represent the use status and
+              availability. You can use <code>badge</code> class to get badge
+              on avatar and to show status use once the class
+              <code>busy</code> or <code>available</code> or
+              <code>offline</code>.
+            </p>
+            <div class="demo-component-wrapper m-5">
+              <div class="demo-component-badge-wrapper">
+                <!-- Avatar -->
+                <div class="badge-wrapper">
+                  <img src="../../assets/images/avatar.svg" class="avatar av-xs" />
+                  <span class="badge busy"></span>
+                </div>
+                <div class="badge-wrapper">
+                  <img src="../../assets/images/avatar.svg" class="avatar av-sm" />
+                  <span class="badge busy"></span>
+                </div>
+                <div class="badge-wrapper">
+                  <img src="../../assets/images/avatar.svg" class="avatar av-md" />
+                  <span class="badge offline"></span>
+                </div>
+                <div class="badge-wrapper">
+                  <img src="../../assets/images/avatar.svg" class="avatar av-lg" />
+                  <span class="badge away"></span>
+                </div>
+                <div class="badge-wrapper">
+                  <img src="../../assets/images/avatar.svg" class="avatar av-xl" />
+                  <span class="badge available"></span>
+                </div>
+              </div>
+            </div>
+            <p>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=16.5px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Avatar%2520with%2520badge--%253E%250A%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Favatar.svg%2522%2520class%253D%2522avatar%2520av-xs%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520busy%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Favatar.svg%2522%2520class%253D%2522avatar%2520av-sm%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520busy%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Favatar.svg%2522%2520class%253D%2522avatar%2520av-md%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520offline%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Favatar.svg%2522%2520class%253D%2522avatar%2520av-lg%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520away%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Favatar.svg%2522%2520class%253D%2522avatar%2520av-xl%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520available%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                style="
+                    width: 749px;
+                    height: 718px;
+                    border: 0;
+                    transform: scale(1);
+                    overflow: hidden;
+                  " sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </p>
+            <p>
+              You can change the badge position with the help of
+              <code>badge-tl</code> or <code>badge-tr</code> or
+              <code>badge-bl</code> these classes as shown in below examples.
+            </p>
+            <div class="demo-component-wrapper m-5">
+              <div class="demo-component-badge-wrapper">
+                <!-- Avatar -->
+                <div class="badge-wrapper">
+                  <img src="../../assets/images/avatar.svg" class="avatar av-xs" />
+                  <span class="badge busy"></span>
+                </div>
+                <div class="badge-wrapper">
+                  <img src="../../assets/images/avatar.svg" class="avatar av-sm" />
+                  <span class="badge busy badge-bl"></span>
+                </div>
+                <div class="badge-wrapper">
+                  <img src="../../assets/images/avatar.svg" class="avatar av-md" />
+                  <span class="badge offline badge-tl"></span>
+                </div>
+                <div class="badge-wrapper">
+                  <img src="../../assets/images/avatar.svg" class="avatar av-lg" />
+                  <span class="badge away badge-tr"></span>
+                </div>
+                <div class="badge-wrapper">
+                  <img src="../../assets/images/avatar.svg" class="avatar av-xl" />
+                  <span class="badge available"></span>
+                </div>
+              </div>
+            </div>
+            <p>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=16.5px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Avatar%2520badge%2520with%2520position--%253E%250A%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Favatar.svg%2522%2520class%253D%2522avatar%2520av-xs%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520busy%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Favatar.svg%2522%2520class%253D%2522avatar%2520av-sm%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520busy%2520badge-bl%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Favatar.svg%2522%2520class%253D%2522avatar%2520av-md%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520offline%2520badge-tl%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Favatar.svg%2522%2520class%253D%2522avatar%2520av-lg%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520away%2520badge-tr%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fimages%252Favatar.svg%2522%2520class%253D%2522avatar%2520av-xl%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520available%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                style="
+                    width: 749px;
+                    height: 630px;
+                    border: 0;
+                    transform: scale(1);
+                    overflow: hidden;
+                  " sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </p>
+            <!-- Notification Badge -->
+            <h3>Notification badge</h3>
+            <p>
+              Notification badge can be used to show the count of
+              notifications.
+            </p>
+            <div class="demo-component-wrapper m-5">
+              <div class="demo-component-badge-wrapper">
+                <!-- Notification count -->
+                <div class="badge-count-wrapper">
+                  <i class="bi bi-cart3"></i>
+                  <span class="badge busy red">99%</span>
+                </div>
+                <div class="badge-count-wrapper">
+                  <i class="bi bi-cart3"></i>
+                  <span class="badge busy green">99+</span>
+                </div>
+                <div class="badge-count-wrapper">
+                  <i class="bi bi-cart3"></i>
+                  <span class="badge busy blue">123</span>
+                </div>
+              </div>
+            </div>
+            <p>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=16.5px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Notification%2520count%2520--%253E%250A%253Cdiv%2520class%253D%2522badge-count-wrapper%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522bi%2520bi-cart3%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520busy%2520red%2522%253E99%2525%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-count-wrapper%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522bi%2520bi-cart3%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520busy%2520green%2522%253E99%252B%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-count-wrapper%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522bi%2520bi-cart3%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520busy%2520blue%2522%253E123%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                style="
+                    width: 560px;
+                    height: 498px;
+                    border: 0;
+                    transform: scale(1);
+                    overflow: hidden;
+                  " sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </p>
+          </div>
+          <!-- Footer -->
+          <div class="content-body-footer p-5 border-top">
+            <a href="../../views/components/alert.html" class="link-footer text-lg">
+              <i class="bi bi-arrow-left-circle mr-2"></i>
+              Alert
+            </a>
+            <a href="../../views/components/button.html" class="link-footer text-lg">
+              Button
+              <i class="bi bi-arrow-right-circle ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>
