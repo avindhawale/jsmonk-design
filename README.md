@@ -35,6 +35,9 @@ JSMonk UI is a premium component material with a fresh, new design inspired by I
 ### Demo
 * Checkout the demo JSMonk UI component library documentation [here](https://6213e80702b63572dbcafdbe--inspiring-jang-79ba74.netlify.app/)
 
+### Screenshot
+![Button Component](![demo](https://user-images.githubusercontent.com/5699611/155021862-362603e8-1f1a-4543-be49-db3394a3c354.gif)
+)
 
 ## Authors
 
